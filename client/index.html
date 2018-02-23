@@ -1,0 +1,33 @@
+<head>
+  <title>LoopBack</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">NHL Schedule</a>
+
+  <!-- Links -->
+  <div class="col-sm-3 col-md-3 pull-right">
+    <form class="form-inline" action="/action_page.php" style="margin:0px;" id="test">
+      <button class="btn btn-success" type="submit">Fetch the Schedule</button>
+    </form>
+  </div>
+</nav>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Game</th>
+        <th>Date</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody id="bod"></tbody>
+  </table>
+</div>
+</body>
